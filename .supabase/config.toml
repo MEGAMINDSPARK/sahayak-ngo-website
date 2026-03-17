@@ -1,0 +1,4 @@
+# Supabase CLI project configuration
+# Run `npx supabase link --project-ref <your_ref>` to populate this automatically.
+
+project_ref = "ynbgmtgpxrgqiqtackkz"

@@ -1,0 +1,37 @@
+NGO Website Test Report
+Date: 2026-03-17
+
+Summary
+- Automated tests executed: TypeScript typecheck, ESLint lint, Production build
+- Manual UI/UX testing: NOT performed (requires running app in browser and real user flows)
+- Backend/DB testing: NOT performed (requires live Supabase + credentials)
+- Payment testing: NOT performed (requires payment sandbox accounts)
+
+Passed Tests ?
+1) TypeScript typecheck (tsc --noEmit)
+2) ESLint lint
+3) Production build (vite build)
+
+Failed Tests ?
+- None
+
+Warnings (Non-blocking)
+- Browserslist data is outdated (run: npx update-browserslist-db@latest)
+- Build chunk size warning (>500 kB): consider code-splitting or manualChunks
+
+Errors Found And Fixes Applied
+- Fixed React Hook dependency warnings by memoizing fetch functions in:
+  - src/components/NotificationBell.tsx
+  - src/components/PostsFeed.tsx
+  - src/pages/DonorDashboard.tsx
+  - src/pages/VolunteerDashboard.tsx
+- Resolved fast-refresh warning by moving useAuth hook into:
+  - src/context/useAuth.tsx
+  and exporting AuthContext from src/context/AuthContext.tsx
+
+Suggestions For Improvement
+- Add e2e tests (Playwright/Cypress) for login, donation, messages, uploads.
+- Consider code-splitting large bundles to reduce initial load.
+
+Final Status
+Ready for Deployment (automated checks pass; manual end-to-end testing still pending)
