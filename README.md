@@ -1,5 +1,5 @@
 # Combined README
-# ?? Sahayak NGO Platform
+#  Sahayak NGO Platform
 ### ?? *Helping Hands for a Better Tomorrow*
 
 ---
@@ -210,29 +210,29 @@ npm run preview
 ```
 sahayak-ngo-system/
 +-- src/
-¦   +-- components/
-¦   ¦   +-- Navbar.tsx
-¦   ¦   +-- Footer.tsx
-¦   +-- context/
-¦   ¦   +-- AuthContext.tsx
-¦   ¦   +-- useAuth.tsx
-¦   +-- lib/
-¦   ¦   +-- supabase.ts
-¦   +-- pages/
-¦   ¦   +-- Home.tsx
-¦   ¦   +-- About.tsx
-¦   ¦   +-- Campaigns.tsx
-¦   ¦   +-- Donate.tsx
-¦   ¦   +-- Events.tsx
-¦   ¦   +-- Contact.tsx
-¦   ¦   +-- Login.tsx
-¦   ¦   +-- Register.tsx
-¦   ¦   +-- AdminDashboard.tsx
-¦   ¦   +-- DonorDashboard.tsx
-¦   ¦   +-- VolunteerDashboard.tsx
-¦   +-- App.tsx
-¦   +-- main.tsx
-¦   +-- index.css
+Â¦   +-- components/
+Â¦   Â¦   +-- Navbar.tsx
+Â¦   Â¦   +-- Footer.tsx
+Â¦   +-- context/
+Â¦   Â¦   +-- AuthContext.tsx
+Â¦   Â¦   +-- useAuth.tsx
+Â¦   +-- lib/
+Â¦   Â¦   +-- supabase.ts
+Â¦   +-- pages/
+Â¦   Â¦   +-- Home.tsx
+Â¦   Â¦   +-- About.tsx
+Â¦   Â¦   +-- Campaigns.tsx
+Â¦   Â¦   +-- Donate.tsx
+Â¦   Â¦   +-- Events.tsx
+Â¦   Â¦   +-- Contact.tsx
+Â¦   Â¦   +-- Login.tsx
+Â¦   Â¦   +-- Register.tsx
+Â¦   Â¦   +-- AdminDashboard.tsx
+Â¦   Â¦   +-- DonorDashboard.tsx
+Â¦   Â¦   +-- VolunteerDashboard.tsx
+Â¦   +-- App.tsx
+Â¦   +-- main.tsx
+Â¦   +-- index.css
 +-- .env
 +-- package.json
 +-- README.md
