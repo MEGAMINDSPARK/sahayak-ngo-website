@@ -1,300 +1,287 @@
-🌟 Sahayak NGO Platform
-🤝 Helping Hands for a Better Tomorrow
-📌 Overview
+# Combined README
+#  Sahayak NGO Platform
+### ?? *Helping Hands for a Better Tomorrow*
 
-Sahayak NGO is a modern full-stack web application built to support social causes like:
+---
 
-🎓 Child Education
+## ? Overview
+**Sahayak NGO** is a modern, full-stack web application designed to support social causes like child education, women empowerment, healthcare, and helping needy people.
 
-👩‍🦱 Women Empowerment
+It provides a complete system for **donations, volunteer management, campaigns, and real-time communication**.
 
-🩺 Healthcare
+---
 
-🤝 Helping Needy People
+## ?? Live Features
 
-It provides a complete system for donations, volunteer management, campaigns, and real-time communication.
+### ????? Admin Dashboard
+- ?? View total donations, donors, and volunteers
+- ?? Create & manage campaigns
+- ? Approve/reject volunteers
+- ?? Reports & analytics (monthly donations, top donors)
+- ?? Real-time notifications
 
-🚀 Live Features
-👨‍💼 Admin Dashboard
+### ?? Donor Dashboard
+- ?? Donate to meaningful campaigns
+- ?? View donation history
+- ?? Download donation receipts
+- ?? Message admin
+- ?? Top Donor Badge system
 
-📊 View total donations, donors, and volunteers
+### ?? Volunteer Dashboard
+- ?? Apply for volunteering
+- ?? View assigned tasks
+- ?? Upload activity proof
+- ???????? Add beneficiaries
+- ? Earn certificates & badges
 
-📝 Create & manage campaigns
+---
 
-✅ Approve / ❌ Reject volunteers
+## ?? Special Highlights
+- ?? Donation celebration (Balloons + Confetti)
+- ?? Smart Notification System
+- ?? Campaign Progress Bars
+- ?? Real-time Messaging System
+- ?? Role-Based Authentication (Admin / Donor / Volunteer)
 
-📈 Reports & analytics (monthly donations, top donors)
+---
 
-🔔 Real-time notifications
+## ??? Tech Stack
 
-💰 Donor Dashboard
+| Technology | Usage |
+|-----------|------|
+| ?? React.js | Frontend |
+| ? Vite | Fast Build Tool |
+| ?? Supabase | Backend & Auth |
+| ?? PostgreSQL | Database |
+| ?? Netlify | Deployment |
 
-❤️ Donate to meaningful campaigns
+---
 
-📜 View donation history
+# Sahayak NGO Management and Donation System
 
-📥 Download donation receipts
+A complete web application for NGO management with separate dashboards for Admin, Donors, and Volunteers.
 
-💬 Message admin
+## Features
 
-🏆 Top Donor Badge system
+### Admin Dashboard
+- View statistics (Total Donations, Donors, Volunteers, Campaigns, Beneficiaries)
+- Campaign Management (Create, Edit, Delete campaigns)
+- Volunteer Management (Approve/Reject volunteer applications)
+- Donor Management (View all donors)
+- Beneficiary Management (Approve/Reject beneficiaries)
+- Messaging System (Send messages to Donors and Volunteers)
+- Event Management
 
-🙋 Volunteer Dashboard
+### Donor Dashboard
+- View donation history
+- Download donation receipts
+- View and donate to active campaigns
+- Receive messages from admin
+- Update profile
 
-📝 Apply for volunteering
+### Volunteer Dashboard
+- Apply as volunteer
+- View campaign information
+- View upcoming events
+- Add beneficiaries (only approved volunteers)
+- Receive messages from admin
+- Update profile
 
-📋 View assigned tasks
+## Technology Stack
 
-📤 Upload activity proof
+### Frontend
+- React.js
+- Bootstrap 5
+- TypeScript
+- bcryptjs for password hashing
 
-👨‍👩‍👧 Add beneficiaries
+### Backend
+- Supabase (PostgreSQL Database)
+- Supabase Authentication
 
-🎖️ Earn certificates & badges
+## Setup Instructions
 
-✨ Special Highlights
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+- Supabase account
 
-🎉 Donation Celebration (Balloons 🎈 + Confetti 🎊)
-
-🔔 Smart Notification System
-
-📊 Campaign Progress Bars
-
-💬 Real-time Messaging System
-
-🔐 Role-Based Authentication (Admin / Donor / Volunteer)
-
-🛠️ Tech Stack
-💻 Technology	🚀 Usage
-⚛️ React.js	Frontend
-⚡ Vite	Fast Build Tool
-🗄️ Supabase	Backend & Authentication
-🐘 PostgreSQL	Database
-🌐 Netlify	Deployment
-📂 Sahayak NGO Management & Donation System
-
-A complete web application with separate dashboards for:
-
-👨‍💼 Admin
-
-💰 Donors
-
-🙋 Volunteers
-
-🔥 Features
-👨‍💼 Admin Dashboard
-
-📊 View statistics (Donations, Donors, Volunteers, Campaigns, Beneficiaries)
-
-📢 Campaign Management (Create, Edit, Delete)
-
-🙋 Volunteer Management (Approve/Reject)
-
-💰 Donor Management
-
-👨‍👩‍👧 Beneficiary Management
-
-💬 Messaging System
-
-📅 Event Management
-
-💰 Donor Dashboard
-
-📜 View donation history
-
-📥 Download receipts
-
-❤️ Donate to campaigns
-
-💬 Receive admin messages
-
-👤 Update profile
-
-🙋 Volunteer Dashboard
-
-📝 Apply as volunteer
-
-📢 View campaigns & events
-
-👨‍👩‍👧 Add beneficiaries (after approval)
-
-💬 Receive admin messages
-
-👤 Update profile
-
-⚙️ Setup Instructions
-📌 Prerequisites
-
-🟢 Node.js (v16 or higher)
-
-📦 npm or yarn
-
-🗄️ Supabase account
-
-🔽 Step 1: Clone Repository
+### Step 1: Clone the Repository
+```bash
 git clone <repository-url>
 cd sahayak-ngo-system
-📦 Step 2: Install Dependencies
+```
+
+### Step 2: Install Dependencies
+```bash
 npm install
-🔗 Step 3: Setup Supabase
+```
 
-Go to 👉 https://supabase.com
+### Step 3: Set Up Supabase
 
-Create a new project
+1. Go to [Supabase](https://supabase.com) and create a new project
+2. Once the project is created, go to Project Settings > API
+3. Copy your project URL and anon key
+4. Update the `.env` file in the root directory:
 
-Go to Project Settings → API
-
-Copy:
-
-Project URL
-
-Anon Key
-
-Update .env file:
-
+```env
 VITE_SUPABASE_URL=your_supabase_url_here
 VITE_SUPABASE_ANON_KEY=your_supabase_anon_key_here
-🗄️ Step 4: Database Setup
+```
 
-Tables included:
+### Step 4: Database Setup
 
-👤 users
+The database schema has already been created automatically. The following tables are available:
+- users
+- campaigns
+- donations
+- volunteers
+- beneficiaries
+- messages
+- events
+- contact_messages
 
-📢 campaigns
+### Step 5: Admin Account
 
-💰 donations
+An admin account is pre-configured with the following credentials:
 
-🙋 volunteers
+**Email:** rahulkumarroy399@gmail.com
+**Password:** Rahul@399
 
-👨‍👩‍👧 beneficiaries
+**Note:** You'll need to hash the password in the database. The system uses bcrypt for password hashing.
 
-💬 messages
+To set up the admin password:
+1. Go to your Supabase project
+2. Open the SQL Editor
+3. Run the following query:
 
-📅 events
-
-📩 contact_messages
-
-🔑 Step 5: Admin Account
-
-Email: rahulkumarroy399@gmail.com
-
-Password: Rahul@399
-
-⚠️ Note: Password must be hashed using bcrypt
-
+```sql
+-- Update admin password (pre-hashed for 'Rahul@399')
 UPDATE users
 SET password = '$2a$10$YourHashedPasswordHere'
 WHERE email = 'rahulkumarroy399@gmail.com';
-▶️ Step 6: Run Application
-💻 Development Mode
+```
+
+Or you can use the registration page to create the admin account first, then manually update the role to 'admin' in the database.
+
+### Step 6: Run the Application
+
+Development mode:
+```bash
 npm run dev
+```
 
-➡️ Runs at: http://localhost:5173
+The application will be available at `http://localhost:5173`
 
-🚀 Production Build
+Production build:
+```bash
 npm run build
 npm run preview
-📖 Usage Guide
-👨‍💼 For Admin
+```
 
-🔐 Login → Dashboard
+## Usage Guide
 
-📢 Manage campaigns
+### For Admin
+1. Login with admin credentials
+2. Access the Admin Dashboard
+3. Manage campaigns, volunteers, donors, and beneficiaries
+4. Send messages to users
+5. View statistics and reports
 
-🙋 Approve volunteers
+### For Donors
+1. Register as a Donor
+2. Login with credentials
+3. Browse active campaigns
+4. Make donations using UPI or Card
+5. Download donation receipts
+6. View messages from admin
 
-📊 View reports
+### For Volunteers
+1. Register as a Volunteer
+2. Login with credentials
+3. Apply for volunteer status
+4. Wait for admin approval
+5. Once approved, add beneficiaries
+6. View campaigns and events
+7. View messages from admin
 
-💬 Send messages
+## Project Structure
 
-💰 For Donors
-
-📝 Register & Login
-
-❤️ Donate to campaigns
-
-📥 Download receipts
-
-💬 View admin messages
-
-🙋 For Volunteers
-
-📝 Register
-
-⏳ Wait for approval
-
-👨‍👩‍👧 Add beneficiaries
-
-📢 View events & campaigns
-
-📁 Project Structure
+```
 sahayak-ngo-system/
-├── src/
-│   ├── components/
-│   ├── context/
-│   ├── lib/
-│   ├── pages/
-│   ├── App.tsx
-│   ├── main.tsx
-│   └── index.css
-├── .env
-├── package.json
-└── README.md
-🔐 Security Features
++-- src/
+¦   +-- components/
+¦   ¦   +-- Navbar.tsx
+¦   ¦   +-- Footer.tsx
+¦   +-- context/
+¦   ¦   +-- AuthContext.tsx
+¦   ¦   +-- useAuth.tsx
+¦   +-- lib/
+¦   ¦   +-- supabase.ts
+¦   +-- pages/
+¦   ¦   +-- Home.tsx
+¦   ¦   +-- About.tsx
+¦   ¦   +-- Campaigns.tsx
+¦   ¦   +-- Donate.tsx
+¦   ¦   +-- Events.tsx
+¦   ¦   +-- Contact.tsx
+¦   ¦   +-- Login.tsx
+¦   ¦   +-- Register.tsx
+¦   ¦   +-- AdminDashboard.tsx
+¦   ¦   +-- DonorDashboard.tsx
+¦   ¦   +-- VolunteerDashboard.tsx
+¦   +-- App.tsx
+¦   +-- main.tsx
+¦   +-- index.css
++-- .env
++-- package.json
++-- README.md
+```
 
-🔑 JWT Authentication
+## Security Features
 
-🔒 Password hashing (bcrypt)
+- JWT Authentication
+- Password hashing using bcrypt
+- Row Level Security (RLS) on database
+- Role-based access control
+- Protected routes for dashboards
+- Input validation
 
-🛡️ Row Level Security (RLS)
+## Color Scheme
 
-👥 Role-based access control
+The application uses Bootstrap's default color scheme with emphasis on:
+- Primary: Blue
+- Success: Green
+- Light backgrounds: White
 
-🚫 Protected routes
+## Browser Support
 
-✔️ Input validation
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-🎨 Color Scheme
+## Troubleshooting
 
-🔵 Primary: Blue
+### Database Connection Issues
+- Verify your Supabase URL and anon key in `.env`
+- Check if your Supabase project is active
+- Ensure RLS policies are properly configured
 
-🟢 Success: Green
+### Build Errors
+- Delete `node_modules` and run `npm install` again
+- Clear the build cache: `rm -rf dist`
+- Check Node.js version compatibility
 
-⚪ Light Background: White
+### Login Issues
+- Verify the admin credentials in the database
+- Check if the password is properly hashed
+- Ensure the user role is set to 'admin'
 
-🌍 Browser Support
+## Support
 
-🌐 Chrome
+For issues and questions, please contact: rahulkumarroy399@gmail.com
 
-🦊 Firefox
+## License
 
-🍎 Safari
-
-🧭 Edge
-
-🛠️ Troubleshooting
-⚠️ Database Issues
-
-✔️ Check Supabase URL & Key
-
-✔️ Ensure project is active
-
-✔️ Verify RLS policies
-
-⚠️ Build Errors
-rm -rf node_modules
-npm install
-⚠️ Login Issues
-
-✔️ Verify credentials
-
-✔️ Check hashed password
-
-✔️ Ensure role = 'admin'
-
-📞 Support
-
-📧 Email: rahulkumarroy399@gmail.com
-
-📄 License
-
-🎓 This project is developed for educational purposes.
+This project is developed for educational purposes.
