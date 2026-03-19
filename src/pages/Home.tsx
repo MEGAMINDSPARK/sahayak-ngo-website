@@ -14,8 +14,8 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
   const isAdmin = userRole === 'admin';
   const isDonor = userRole === 'donor';
   const disableVolunteerBtn = isAdmin || isDonor;
-  const showDonateBtn = !user || userRole === 'donor' || isAdmin;
-  const showVolunteerBtn = !user || userRole === 'donor' || isAdmin;
+  const showDonateBtn = !user || userRole === 'donor';
+  const showVolunteerBtn = !user || userRole === 'donor';
 
   const [recentDonations, setRecentDonations] = useState<Array<{ donorName: string; amount: number; date: string }>>([]);
   const [topDonors, setTopDonors] = useState<Array<{ donorName: string; total: number }>>([]);
@@ -209,11 +209,8 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
                 </p>
                 {showDonateBtn && (
                   <button
-                    className={`btn btn-dark btn-lg me-2${isAdmin ? ' disabled' : ''}`}
-                    onClick={() => {
-                      if (!isAdmin) onNavigate('donate');
-                    }}
-                    disabled={isAdmin}
+                    className="btn btn-dark btn-lg me-2"
+                    onClick={() => onNavigate('donate')}
                   >
                     Donate Now
                   </button>

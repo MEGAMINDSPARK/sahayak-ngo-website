@@ -9,6 +9,7 @@ const ChildEducation: React.FC<ChildEducationProps> = ({ onNavigate }) => {
   const { user } = useAuth();
   const userRole = user?.role?.toLowerCase();
   const isAdmin = userRole === 'admin';
+  const canDonate = !user || userRole === 'donor';
   const disableVolunteerBtn = isAdmin || userRole === 'donor';
   return (
     <div>
@@ -58,15 +59,14 @@ const ChildEducation: React.FC<ChildEducationProps> = ({ onNavigate }) => {
                 <span className="ourwork-pill">Teacher Support</span>
               </div>
               <div className="d-flex flex-wrap gap-3">
-                <button
-                  className={`btn btn-primary${isAdmin ? ' disabled' : ''}`}
-                  onClick={() => {
-                    if (!isAdmin) onNavigate('donate');
-                  }}
-                  disabled={isAdmin}
-                >
-                  Donate Now
-                </button>
+                {canDonate && (
+                  <button
+                    className="btn btn-primary"
+                    onClick={() => onNavigate('donate')}
+                  >
+                    Donate Now
+                  </button>
+                )}
                 <button
                   className={`btn btn-outline-primary${disableVolunteerBtn ? ' disabled' : ''}`}
                   onClick={() => {

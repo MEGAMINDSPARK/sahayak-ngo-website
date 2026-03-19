@@ -39,6 +39,13 @@ const Donate: React.FC<DonateProps> = ({ onNavigate, selectedCampaignId }) => {
   }, [selectedCampaignId]);
 
   useEffect(() => {
+    if (user && user.role?.toLowerCase() !== 'donor') {
+      alert('Only donors are allowed to make donations.');
+      onNavigate('home');
+    }
+  }, [user, onNavigate]);
+
+  useEffect(() => {
     if (!success) return;
     setShowCelebration(true);
     const playCelebrationSound = async () => {
@@ -86,6 +93,10 @@ const Donate: React.FC<DonateProps> = ({ onNavigate, selectedCampaignId }) => {
     if (!user) {
       alert('Please login to donate');
       onNavigate('donor-login');
+      return;
+    }
+    if (user.role?.toLowerCase() !== 'donor') {
+      alert('Only donors are allowed to make donations.');
       return;
     }
 
